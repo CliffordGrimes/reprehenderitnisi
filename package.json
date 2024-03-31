@@ -1,0 +1,58 @@
+{
+  "name": "reprehenderitnisi",
+  "version": "1.0.0",
+  "description": "Custom YAML tag definitions to support modular YAML documents with js-yaml.",
+  "main": "index.js",
+  "keywords": [
+    "minima",
+    "et",
+    "modular",
+    "non",
+    "js-yaml-tag"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CliffordGrimes/reprehenderitnisi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CliffordGrimes/reprehenderitnisi.git/issues"
+  },
+  "homepage": "https://github.com/CliffordGrimes/reprehenderitnisi.git",
+  "author": "AnnettaLehner",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "js-yaml": "^3.4.2",
+    "lodash.assign": "^3.2.0",
+    "lodash.isarray": "^3.0.4",
+    "lodash.merge": "^3.3.2",
+    "recursive-readdir-sync": "^1.0.6"
+  },
+  "devDependencies": {
+    "blanket": "^1.1.7",
+    "codeclimate-test-reporter": "0.1.1",
+    "coveralls": "^2.11.2",
+    "mocha": "^2.2.5",
+    "mocha-lcov-reporter": "1.0.0",
+    "mocha-multi": "^0.7.1",
+    "should": "^7.1.0",
+    "travis-cov": "^0.2.5"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "index.js",
+        "lib"
+      ],
+      "data-cover-never": [
+        "node_modules"
+      ],
+      "data-cover-reporter-options": {
+        "shortnames": true
+      }
+    },
+    "travis-cov": {
+      "threshold": 90
+    }
+  }
+}
